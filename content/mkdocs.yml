@@ -1,6 +1,7 @@
 site_name: MoonCord Wiki
 site_url: https://wiki.tludwig.dev/mooncord
 repo_url: https://github.com/eliteSchwein/mooncord
+edit_url: ""
 nav:
   - Home: index.md
   - Installation: install.md
