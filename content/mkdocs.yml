@@ -1,7 +1,6 @@
 site_name: MoonCord Wiki
 site_url: https://wiki.tludwig.dev/mooncord
-repo_url: https://github.com/eliteSchwein/mooncord-docs
-edit_uri: edit/main/content/docs/
+repo_url: https://github.com/eliteSchwein/mooncord
 nav:
   - Home: index.md
   - Installation: install.md
@@ -61,6 +60,9 @@ nav:
       - "Dev Build": sites/Misc/devbuild.md
       - "Translation": sites/Misc/translation.md
       - "Credits": sites/Misc/credits.md
+plugins:
+  - search
+  - offline
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -109,6 +111,7 @@ theme:
   logo: img/logo.png
   favicon: img/logo.png
   icon:
+    repo: fontawesome/brands/github
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
