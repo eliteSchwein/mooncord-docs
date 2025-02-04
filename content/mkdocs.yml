@@ -62,7 +62,6 @@ nav:
       - "Credits": sites/Misc/credits.md
 plugins:
   - search
-  - offline
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
