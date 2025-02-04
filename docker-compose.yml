@@ -1,0 +1,9 @@
+services:
+  mooncord-docs:
+    container_name: mooncord-docs
+    image: squidfunk/mkdocs-material
+    restart: always
+    ports:
+      - "8201:8000"
+    volumes:
+      - "${PWD}/content:/docs"
