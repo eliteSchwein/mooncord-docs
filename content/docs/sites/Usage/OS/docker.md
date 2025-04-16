@@ -6,7 +6,7 @@
 !!! info
     if you dont want to use docker compose, you are on your own.
 
-you can use the official [docker image](https://hub.docker.com/repository/docker/tludwigdev/mooncord/general).  
+you can use the official [docker image](https://hub.docker.com/r/tludwigdev/mooncord).  
 
 ## Initial Setup
 
