@@ -38,32 +38,45 @@ after that run `docker compose up` again, this will test start MoonCord and also
 
 ## Install wizard
 ![Screenshot](../../../img/wizard1.png)
-<small>Before you continue with the install wizard, please make sure the bot is running in setup mode by the [install script](#install-script),
-it should look like the Screenshot above.</small>
+Before you continue with the install wizard, please make sure the bot is running in setup mode by the [install script](#install-script),  
+it should look like the Screenshot above.  
+<br>
 
 ![Screenshot](../../../img/wizard2.png)
-<small>Copy Paste the invite Url into your browser (ctrl + c is supported since 1.0.3)</small>
+Copy Paste the invite Url into your browser (ctrl + c is supported).  
+<br>
 
 ![Screenshot](../../../img/wizard3.png)         
-<small>Select a Server where you have admin permissions or temporary create one</small>
+Select a Server where you have admin permissions or temporary create one.  
+<br>
 
 ![Screenshot](../../../img/wizard4.png)         
-<small>When you invite the Bot, dont untick permissions. this permissions are already the bare minimum</small>
+When you invite the Bot, dont untick permissions. this permissions are already the bare minimum.  
+<br>
 
 ![Screenshot](../../../img/wizard5.png)         
-<small>now write your Bot a message via DM (direct message)</small>
+now write your Bot a message via DM (direct message).  
+<br>
 
 ![Screenshot](../../../img/wizard6.png)         
-<small>this is the install wizard, it will guide you through the final installation steps</small>
+this is the install wizard, it will guide you through the final installation steps.  
+<br>
 
 ![Screenshot](../../../img/wizard7.png)         
-<small>Do you want private notifications? if yes press yes otherwise no</small>
+Do you want private notifications? if yes press yes otherwise no.  
+<br>
 
 ![Screenshot](../../../img/wizard8.png)         
-<small>you can adjust the cam settings, it will update the config in real time and update the message with the new cam settings.</small>
+you can adjust the cam settings, it will update the config in real time and update the message with the new cam settings.  
+<br>
 
 ![Screenshot](../../../img/wizard9.png)         
-<small>check if all steps are correct and if they are just hit finish</small>
+check if all steps are correct and if they are just hit finish.  
+<br>
+
+![Screenshot](../../../img/wizard10.png)         
+mooncord is now finished with the install wizard.  
+<br>
 
 ## finish Docker Setup
 mooncord should automatic stop after finishing the install wizard.  

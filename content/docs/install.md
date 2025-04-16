@@ -39,55 +39,71 @@ bash scripts/install.sh
 Now follow the install script, below are screenshots with some explanation what the questions mean.
 
 ![Screenshot](img/question1.png)
-<small>enter the absolut path to your config directory of your klipper installation, when you have a normal mainsailos you can leave this empty.</small>
+enter the absolut path to your config directory of your klipper installation, when you have a normal mainsailos you can leave this empty.  
+<br>  
 
 ![Screenshot](img/question2.png)
-<small>enter the absolut path to your logs directory of your klipper installation, when you have a normal mainsailos you can leave this empty.</small>
+enter the absolut path to your logs directory of your klipper installation, when you have a normal mainsailos you can leave this empty.  
+<br>
 
 ![Screenshot](img/question3.png)
-<small>enter your Discord Bot Token from [Create Discord Application](#create-discord-application)</small>
+enter your Discord Bot Token from [Create Discord Application](#create-discord-application).  
+<br>
 
 ![Screenshot](img/question4.png)
 ![Screenshot](img/question4_1.png)  
-<small>enter your full Discord tag, the smaller name (blue square in my screenshot).</small>
+enter your full Discord Username (not Displayname!), the smaller name (blue square in my screenshot).  
+<br>
 
 ![Screenshot](img/question5.png)
-<small>A present NodeJS installation was found, mooncord 1.0.3 requires nodejs 20, if you have a older or unknown nodejs Version, type Y otherwise type N.</small>
+A present NodeJS installation was found, mooncord 1.0.3 requires nodejs 20, if you have a older or unknown nodejs Version, type Y otherwise type N.  
+<br>
 
 ![Screenshot](img/question6.png)
-<small>the install script is rebuilding NPM to make sure that the packages can successfully install. drink some coffee ☕, eat something 🍔, this step will take some time (on a rpi4 around 7 minutes)... </small>
+the install script is rebuilding NPM to make sure that the packages can successfully install. drink some coffee ☕, eat something 🍔, this step will take some time (on a rpi4 around 7 minutes)...  
+<br>
 
 ## Install wizard
 ![Screenshot](img/wizard1.png)
-<small>Before you continue with the install wizard, please make sure the bot is running in setup mode by the [install script](#install-script),
-it should look like the Screenshot above.</small>
+Before you continue with the install wizard, please make sure the bot is running in setup mode by the [install script](#install-script),  
+it should look like the Screenshot above.  
+<br>  
 
 ![Screenshot](img/wizard2.png)
-<small>Copy Paste the invite Url into your browser (ctrl + c is supported since 1.0.3)</small>
+Copy Paste the invite Url into your browser (ctrl + c is supported).  
+<br>  
 
 ![Screenshot](img/wizard3.png)         
-<small>Select a Server where you have admin permissions or temporary create one</small>
+Select a Server where you have admin permissions or temporary create one.  
+<br>  
 
 ![Screenshot](img/wizard4.png)         
-<small>When you invite the Bot, dont untick permissions. this permissions are already the bare minimum</small>
+When you invite the Bot, dont untick permissions. this permissions are already the bare minimum.  
+<br>  
 
 ![Screenshot](img/wizard5.png)         
-<small>now write your Bot a message via DM (direct message)</small>
+now write your Bot a message via DM (direct message).  
+<br>  
 
 ![Screenshot](img/wizard6.png)         
-<small>this is the install wizard, it will guide you through the final installation steps</small>
+this is the install wizard, it will guide you through the final installation steps.  
+<br>  
 
 ![Screenshot](img/wizard7.png)         
-<small>Do you want private notifications? if yes press yes otherwise no</small>
+Do you want private notifications? if yes press yes otherwise no.  
+<br>  
 
 ![Screenshot](img/wizard8.png)         
-<small>you can adjust the cam settings, it will update the config in real time and update the message with the new cam settings.</small>
+you can adjust the cam settings, it will update the config in real time and update the message with the new cam settings.  
+<br>  
 
 ![Screenshot](img/wizard9.png)         
-<small>check if all steps are correct and if they are just hit finish</small>
+check if all steps are correct and if they are just hit finish.  
+<br>  
 
 ![Screenshot](img/wizard10.png)         
-<small>mooncord is now finished with the installation</small>
+mooncord is now finished with the installation.  
+<br>  
 
 ## Printer configuration
 !!! info
@@ -102,7 +118,8 @@ please add `127.0.0.1` (or on a remote installation the ip of your mooncord host
 trusted_clients:
   127.0.0.1
 ```
-<small>example moonraker configuration</small>
+example moonraker configuration  
+<br>
 
 #### Update Manager
 please put the following configuration at the end of your moonraker configuration. that way moonraker can update mooncord.
@@ -114,18 +131,20 @@ origin: https://github.com/eliteschwein/mooncord.git
 install_script: scripts/install.sh
 enable_node_updates: True
 ```
-please restart moonraker to apply the changes
+please restart moonraker to apply the changes  
+<br>
 
 ### Klipper configuration
 
 #### Command Response
-<small>this is only required if you want to send a notification via gcode or want to use the timelapse feature)</small>
+this is only required if you want to send a notification via gcode or want to use the timelapse feature)
 please put the following configuration at the end of your klipper configuration (printer.cfg).
 ```c
 [respond]
 default_type: command
 ```
-please restart your firmware to apply the changes
+please restart your firmware to apply the changes  
+<br>
 
 ## Additional Attributes
 You can add aditional Attributes to the install script for faster deployment or custom service names.
@@ -137,35 +156,42 @@ adding a suffix to the service name `MoonCord_SUFFIX`:
 ```shell
 bash scripts/install.sh --service_suffix=SUFFIX
 ```
+<br>  
 
 predefine the config path:
 ```shell
 bash scripts/install.sh --config_path=/THIS/IS/A/EXAMPLE/PATH
 ```
+<br>  
 
 predefine the log path:
 ```shell
 bash scripts/install.sh --log_path=/THIS/IS/A/EXAMPLE/PATH
 ```
+<br>  
 
 predefine the discord token:
 ```shell
 bash scripts/install.sh --discord_token=DISCORD_TOKEN
 ```
+<br>  
 
 predefine the moonraker token:
 ```shell
 bash scripts/install.sh --discord_token=MOONRAKER_TOKEN
 ```
+<br>  
 
 predefine the moonraker url:
 ```shell
 bash scripts/install.sh --discord_token=MOONRAKER_URL
 ```
+<br>  
 
 predefine the moonraker service:
 ```shell
 bash scripts/install.sh --discord_token=MOONRAKER_SERVICE
 ```
+<br>  
 
 all attributes can be combined of course
