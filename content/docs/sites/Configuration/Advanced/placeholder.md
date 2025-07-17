@@ -71,3 +71,18 @@ ${isMatching:key:value:validValue:invalidValue}
 ```
 <small>set a value if a key is matching the value.</small>  
 <br>
+```c
+${substr:amount:value}
+```
+<small>cut a string to length.</small>  
+<br>
+```c
+${thumbnail:value:type}
+```
+<small>convert a thumbnail to base64, types: timelapse (for timelapse thumbnail), large (default), small.</small>  
+<br>
+```c
+${metadata:value:metadataKey:fallback}
+```
+<small>gets the metadata for a gcode file, fallback is optional.</small>  
+<br>
